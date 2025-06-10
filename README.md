@@ -1,20 +1,17 @@
-# Poster Splitter 🖨️🧩
 
-Genera un póster dividido en varias páginas A4 a partir de una imagen.
+# Poster Splitter Web App
 
-## Cómo usar
+Esta aplicación permite subir una imagen y dividirla automáticamente en varias páginas tamaño A4 listas para imprimir como un póster.
 
-1. Sube una imagen.
-2. Elige cuántas páginas de ANCHO tendrá el póster.
-3. Descarga el ZIP con las páginas listas para imprimir.
+## Cómo desplegar en Render
 
-## Ejecutar localmente
+1. Sube el código a un repositorio en GitHub.
+2. Entra a [Render](https://render.com).
+3. Crea un nuevo Web Service y conecta tu repositorio.
+4. Usa esta configuración:
 
-```bash
-pip install -r requirements.txt
-python app.py
-```
+- **Build Command**: `pip install -r requirements.txt`
+- **Start Command**: `python app.py`
+- **Environment Variable**: Render asigna automáticamente `PORT`
 
-## Despliegue
-
-Compatible con Render y otros servicios que soporten Flask + Python 3.x.
+La app estará accesible en la URL proporcionada por Render.

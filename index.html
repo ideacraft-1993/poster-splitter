@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Poster Splitter</title>
+</head>
+<body>
+    <h1>Dividir imagen en múltiples páginas A4</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="image">Selecciona una imagen:</label><br>
+        <input type="file" name="image" required><br><br>
+        <label for="num_pages_wide">Páginas de ancho (1-10):</label><br>
+        <input type="number" name="num_pages_wide" min="1" max="10" required><br><br>
+        <input type="submit" value="Dividir y descargar ZIP">
+    </form>
+</body>
+</html>
